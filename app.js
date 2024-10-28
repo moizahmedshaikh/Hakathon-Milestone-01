@@ -1,11 +1,12 @@
 "use strict";
-const toggleSkillsButton = document.getElementById('toggle-skills-btn');
-const skillsList = document.getElementById('skills-list');
-toggleSkillsButton.addEventListener('click', () => {
-    if (skillsList.style.display === 'none' || !skillsList.style.display) {
-        skillsList.style.display = 'block';
+// Object.defineProperty(exports, "__esModule", { value: true });
+let btn = document.querySelector(".btn");
+let skillsList = document.querySelector(".skills");
+btn?.addEventListener("click", () => {
+    if (skillsList.style.display === "none" || !skillsList.style.display) {
+        skillsList.style.display = "block";
     }
     else {
-        skillsList.style.display = 'none';
+        skillsList.style.display = "none";
     }
 });
